@@ -21,6 +21,7 @@ database
     error(err)
   });
 
-App.listen(5000, () => {
-  console.log('Example app listening on port 5000!')
+const port = (process.env.NODE_ENV === 'production') ? 3000 : 5000;
+App.listen(port, () => {
+  console.log('Example app listening on port: ' + port)
 });
