@@ -1,0 +1,40 @@
+{
+  "name": "sound-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && nodemon dist/index.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "cheerio": "^1.0.0-rc.2",
+    "cli-table": "^0.3.1",
+    "co": "^4.6.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "express": "~4.16.0",
+    "get-routes": "^0.2.0",
+    "http": "^0.0.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.3.0",
+    "lrc-parser": "^1.0.1",
+    "mongoose": "^5.2.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.5",
+    "path": "^0.12.7",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "utils": "^0.3.1",
+    "validator": "^10.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
+  }
+}
