@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "dev": "nodemon index.js",
-    "start": "NODE_ENV=production nodemon index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",
