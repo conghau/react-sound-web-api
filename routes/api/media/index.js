@@ -5,7 +5,7 @@ const getTop100 = require('./top100');
 const search = require('./search');
 const getDefaultAlbums = require('./default_albums');
 const getAlbums = require('./albums');
-const getAlbumPlaylist = require('./album_playlist');
+const albumActions = require('./albums');
 // const getDefaultArtists = require('./default_artists');
 const artistActions = require('./genreArtists');
 const getArtist = require('./artist');
@@ -24,9 +24,9 @@ router.get('/search', search);
 
 router.get('/album/default', getDefaultAlbums);
 
-router.get('/albums', getAlbums);
+router.get('/albums', albumActions.getAlbums);
 
-router.get('/album_playlist', getAlbumPlaylist);
+router.get('/album_playlist', albumActions.getAlbumPlaylist);
 
 // router.get('/artist/default', getDefaultArtists);
 

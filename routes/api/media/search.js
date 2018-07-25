@@ -19,8 +19,8 @@ module.exports = function (req, res, next) {
         // return top result with a blank object if the type is 'video'
         data.top = Object.create(null);
       }
-
       res.json(data);
+
     })
     .catch(err => next(err));
 };
