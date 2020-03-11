@@ -24,7 +24,7 @@
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.3.0",
     "lrc-parser": "^1.0.1",
-    "mongoose": "^5.2.1",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.0",
     "nodemon": "^1.17.5",
     "path": "^0.12.7",
